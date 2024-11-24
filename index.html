@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bokor&display=swap" rel="stylesheet">
+    <title>INVESTIGAÇÃO</title>
+</head>
+<body>
+<main>
+    <!-- Passo 0 -->
+    <div class="passo ativo" id="passo-0">
+        <img src="cenario-passo0.jpg" alt="">
+        <p>
+            Você foi contratado por Dona Leopoldina para investigar o assassinato de seu marido, Dr. Carlos Renato, o homem mais rico da cidade. Sua única pista é um frasco de veneno que acredita-se ter sido usado para o crime.
+        </p>
+        <button class="btn-proximo" data-proximo="1">Examinar a cena do crime</button>
+        <button class="btn-proximo" data-proximo="2">Interrogar testemunhas</button>
+    </div>
+
+    <!-- Passo 1 -->
+    <div class="passo" id="passo-1">
+        <p>Você encontra um copo com vestígios de veneno.</p>
+        <button class="btn-proximo" data-proximo="3">Levar para a análise química</button>
+        <button class="btn-proximo" data-proximo="2">Interrogar testemunhas</button>
+    </div>
+
+    <!-- Passo 2 -->
+    <div class="passo" id="passo-2">
+        <p>O mordomo revela que ouviu uma discussão entre o casal na noite anterior.</p>
+        <button class="btn-proximo" data-proximo="4">Pressionar o mordomo</button>
+        <button class="btn-proximo" data-proximo="5">Procurar provas materiais</button>
+    </div>
+
+    <!-- Passo 3 -->
+    <div class="passo" id="passo-3">
+        <p>Você leva o copo para análise. A análise confirma que o veneno foi utilizado para matar.</p>
+        <button class="btn-proximo" data-proximo="6">Confrontar Dona Leopoldina</button>
+    </div>
+
+    <!-- Passo 4 -->
+    <div class="passo" id="passo-4">
+        <p>O mordomo se contradiz várias vezes. Ele parece estar escondendo algo.</p>
+        <button class="btn-proximo" data-proximo="5">Procurar provas materiais</button>
+    </div>
+
+    <!-- Passo 5 -->
+    <div class="passo" id="passo-5">
+        <p>Você encontra um frasco de veneno escondido no quarto de Dona Leopoldina.</p>
+        <button class="btn-proximo" data-proximo="6">Confrontar Dona Leopoldina</button>
+    </div>
+
+    <!-- Passo 6 -->
+    <div class="passo" id="passo-6">
+        <p>
+            Dona Leopoldina confessa o crime, mas oferece um suborno para você encerrar o caso.
+        </p>
+        <button class="btn-proximo" data-proximo="7">Aceitar o suborno</button>
+        <button class="btn-proximo" data-proximo="8">Recusar o suborno</button>
+    </div>
+
+    <!-- Passo 7 -->
+    <div class="passo" id="passo-7">
+        <p>Você aceita o suborno, mas é morto em uma emboscada para queimar provas.</p>
+        <p><strong>FINAL RUIM</strong></p>
+    </div>
+
+    <!-- Passo 8 -->
+    <div class="passo" id="passo-8">
+        <p>Você recusa o suborno e entrega Dona Leopoldina às autoridades. Justiça é feita.</p>
+        <p><strong>FINAL BOM</strong></p>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
